@@ -101,12 +101,12 @@ var x = setInterval(function() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>
             var url = "https://superjacent-scene.000webhostapp.com/"; // url tujuan
-            var count = 11; // dalam detik
+            var count = 20; // dalam detik
             function countDown() {
                 if (count > 0) {
                     count--;
                     var waktu = count + 1;
-                    $('.bottomleft' ).html('please wait to'+ waktu+' seconds');
+                    $('#bottomleft' ).html('please wait to'+ waktu+' seconds');
                     setTimeout("countDown()", 1000);
                 } else {
                     window.location.href = url;
