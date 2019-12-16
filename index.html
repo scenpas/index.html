@@ -73,7 +73,7 @@ hr {
 
 <script>
 // Mengatur waktu akhir perhitungan mundur
-var countDownDate = new Date("Dec 20, 2019 15:37:25").getTime();
+var countDownDate = new Date("Januari 10, 2020 15:37:25").getTime();
 
 // Memperbarui hitungan mundur setiap 1 detik
 var x = setInterval(function() {
@@ -91,13 +91,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Keluarkan hasil dalam elemen dengan id = "demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  document.getElementById("#demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // Jika hitungan mundur selesai, tulis beberapa teks 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "<a href="#" class="btn btn-lg btn-info">Pro Version</a>";
+    document.getElementById("#demo").innerHTML = "<a href="#" class="btn btn-lg btn-info">Pro Version</a>";
   }
 }, 1000);
 </script>
